@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170718195109) do
+ActiveRecord::Schema.define(version: 20170718200546) do
 
   create_table "campaigns", force: :cascade do |t|
     t.integer  "user_id"
@@ -23,6 +23,14 @@ ActiveRecord::Schema.define(version: 20170718195109) do
     t.integer  "item_id"
     t.datetime "created_at",      null: false
     t.datetime "updated_at",      null: false
+  end
+
+  create_table "donations", force: :cascade do |t|
+    t.integer  "campaign_id"
+    t.integer  "amount"
+    t.string   "stripe_token"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
   end
 
   create_table "organizations", force: :cascade do |t|
