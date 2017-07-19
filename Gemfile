@@ -37,6 +37,8 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Use ENV variables locally
   gem 'dotenv-rails'
+  # Better errors for rails
+  gem 'better_errors'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
