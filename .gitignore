@@ -19,3 +19,9 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+# Dang DS_Store
+.DS_Store
+
+# Dotenv variable files
+.env
